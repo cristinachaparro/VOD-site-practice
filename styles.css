@@ -1,0 +1,272 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  box-sizing: border-box;
+}
+
+/*Estilos globales*/
+
+button {
+  background-color: #e50914;
+  border: none;
+  color: white;
+  font-family: "Dosis", Sans-serif;
+}
+
+h3 {
+  font-family: "Anton", sans-serif;
+  color: white;
+  font-size: 56px;
+  text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.6);
+}
+
+@media only screen and (max-width: 576px) {
+  h3 {
+    font-size: 36px;
+  }
+}
+
+p {
+  color: white;
+  font-size: 25px;
+  font-family: "Josefin", sans-serif;
+  text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.6);
+}
+
+/* PORTADA */
+
+.portada {
+  height: 100vh;
+  background-image: url(img/portada.jpg);
+  background-size: cover;
+}
+
+.portada .header {
+  width: 90%;
+  margin: 0 auto;
+  padding: 30px 0;
+}
+
+.portada .header div {
+  width: 50%;
+  float: left;
+}
+
+.portada .header .logo {
+  text-align: left;
+}
+
+@media only screen and (max-width: 576px) {
+  .portada .header .logo {
+    padding-top: 5px;
+  }
+
+  .portada .header .logo img {
+    width: 100%;
+  }
+}
+
+.portada .header .btn-start {
+  text-align: right;
+}
+
+.portada .header .btn-start button {
+  cursor: pointer;
+  padding: 5px 20px;
+  border-radius: 4px;
+  font-size: 18px;
+}
+
+@media only screen and (max-width: 576px) {
+  .portada .header .btn-start button {
+    padding: 5px 10px;
+    font-size: 14px;
+  }
+}
+
+.portada .home {
+  width: 50%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80%;
+}
+
+@media only screen and (max-width: 576px) {
+  .portada .home {
+    width: 80%;
+  }
+}
+
+.portada .home .titles {
+  width: 100%;
+  text-align: center;
+}
+
+.portada .home .form {
+  margin-top: 20px;
+  width: 100%;
+  height: 60px;
+}
+
+@media only screen and (max-width: 576px) {
+  .portada .home .form {
+    width: 100%;
+    height: auto;
+  }
+}
+
+.portada .home .form .form-input {
+  width: 60%;
+  float: left;
+  height: 100%;
+}
+
+@media only screen and (max-width: 576px) {
+  .portada .home .form .form-input {
+    height: auto;
+    width: 100%;
+  }
+}
+
+.form .btn-trynow {
+  width: 40%;
+  float: left;
+  height: 100%;
+}
+
+@media only screen and (max-width: 576px) {
+  .form .btn-trynow {
+    width: 100%;
+    float: none;
+    height: auto;
+  }
+}
+
+.form-input input {
+  width: 100%;
+  border: none;
+  border-radius: 2px 0 0 2px;
+  height: 100%;
+  font-size: 24px;
+  text-indent: 5%;
+}
+
+@media only screen and (max-width: 576px) {
+  .form-input input {
+    height: auto;
+    padding: 15px;
+    width: 80%;
+    border-radius: 2px;
+    margin: 0 auto;
+  }
+}
+
+.btn-trynow button {
+  cursor: pointer;
+  width: 100%;
+  border-radius: 0 2px 2px 0;
+  margin: 0;
+  font-size: 24px;
+  height: 100%;
+}
+
+@media only screen and (max-width: 576px) {
+  .btn-trynow button {
+    width: 60%;
+    margin: 0 auto;
+    border-radius: 2px;
+    margin-top: 5px;
+  }
+}
+
+.titles p {
+  font-size: 20px;
+  margin-top: 15px;
+}
+
+/* Section */
+
+.section {
+  background-color: #000000;
+  border-top: 8px solid #222222;
+}
+
+.section .container {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.section .container .titles-section {
+  width: 60%;
+  float: left;
+}
+
+@media only screen and (max-width: 576px) {
+  .section .container .titles-section {
+    width: 100%;
+    float: none;
+    padding: 20px 0;
+  }
+}
+
+.section .container .img-section {
+  width: 40%;
+  float: left;
+}
+
+@media only screen and (max-width: 576px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .section .container .img-section {
+    width: 100%;
+    float: none;
+    padding: 20px 0;
+  }
+
+  .section .img-section {
+    text-align: center;
+    display: block;
+  }
+
+  .container .questions {
+    width: 100%;
+  }
+
+  .seccion .questions .question {
+    font-size: 20px;
+  }
+}
+
+.section .img-section img {
+  width: 100%;
+}
+
+/* Questions */
+
+.container .questions {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.container .questions h3 {
+  padding: 15px 0;
+}
+
+.questions .question {
+  padding: 15px;
+  background: #303030;
+  margin: 3px 0;
+  cursor: pointer;
+}
